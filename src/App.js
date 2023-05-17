@@ -1,25 +1,18 @@
+import React from "react"
+import Jogo from "./components/Jogo";
+import Letras from "./components/Letras";
 import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Jogo />
+        <Letras />
+      <div className="container-wordInput">
+
+      </div>
     </div>
   );
 }
-
-export default App;
